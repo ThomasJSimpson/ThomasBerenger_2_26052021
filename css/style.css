@@ -4,11 +4,13 @@
          url(./Raleway/static/Raleway-Bold.ttf) format('truetype');
     }
 
+    * {
+        box-sizing: border-box;
+    }
     body{
         font-family: "Raleway", sans-serif;
-        margin-top: 0px;
-        margin-left: 80px;
-        margin-right: 80px;
+        margin: 0px;
+        padding: 50px;
         }
 
 
@@ -22,15 +24,15 @@ nav {
 
     
 nav img {
-        margin-top: 50px;
-        width: 125px;
+        
+        width: 100px;
         height: 100%;
     }
     
 nav div {
         display: flex;
-        font-size: 1.3em;
-        margin-top: 60px;    
+        
+           
     }
 
 nav div ul {
@@ -40,8 +42,8 @@ nav div ul {
 
 nav div p {
             color: #0065FC;
-            margin-left: 50px;
-            margin-right: 20px;
+            padding-left: 35px;
+            padding-right: 25px;
             font-family: "Raleway-Bold", sans-serif;
             font-weight: bold;
     }   
@@ -51,15 +53,267 @@ nav div p {
 .liens:link {
             color: black;
             text-decoration:none; 
-            padding-top: 50px;
-            padding-left: 50px;
-            padding-right: 50px;
+            padding-top: 65px;
+            padding-left: 35px;
+            padding-right: 35px;
+            
     }
 
 .liens:hover {
             color: #0065FC;
-            border-width:4px 0px 0px 0px;
+            border-width:2px 0px 0px 0px;
             border-style:solid;
             border-color:#0065FC;
-            padding-top: 77px;
+            padding-top: 64px;
+            
     }
+    /* Section recherche de location */
+    
+.recherche h1{
+        font-family: "Raleway-Bold", sans-serif;
+        font-weight: 500;
+        margin-top: 40px;
+        margin-bottom: 10px;
+}
+.recherche p{
+    margin: 0px;
+}
+.recherche header{
+    margin-bottom: 20px;
+}
+
+.formulaire {
+    display: flex;
+    justify-content: space-between;
+    width: 420px;
+    height: 50px;
+      }
+
+/* Icones filtres */
+.fa-money-bill-wave, .fa-child, .fa-heart, .fa-dog{    
+        color: #0065FC;
+        background-color: #DEEBFF;
+        border-radius: 100%; 
+        font-size: 18px;  
+        height: 50px;
+        width: 50px;
+        padding-top: 16px;
+        padding-left: 14px
+    }
+    .fa-child{
+        padding-top: 16px;
+        padding-left: 18px 
+    }
+    .fa-heart{
+        padding-top: 17px;
+        padding-left: 16px 
+    }
+
+
+
+ /* Icone position */
+.fa-map-marker-alt {
+        border-radius: 15px 0px 0px 15px;
+        color: #060a0f;
+        background-color: #F2F2F2;
+        font-size: 18px;
+        width: 50px;
+        height: 50px;
+        padding: 17px 20px; 
+    }
+    
+.zone {
+    padding: 18px 70px 18px 18px;
+    line-height: 50px;
+    width: 235px;
+    border-radius: 0px;
+    border: none;
+    border-top : 1px  solid #F2F2F2;
+    border-bottom : 1px  solid #F2F2F2;
+    font-size: 18px;
+    font-family: "Raleway", "Sans serif";
+    color: black;
+}
+
+::placeholder{
+    font-family: "Raleway-Bold", sans-serif;
+    font-weight: bold;
+    color: black;
+    font-weight:700;
+    
+}
+/* bouton recherche */
+.formulaire button{
+    font-family: "Raleway-Bold", sans-serif;
+    font-weight: bold;
+    background-color: #0065FC;
+    border-radius: 0px 15px 15px 0px;
+    border: 0px;
+    color: #eeeeee;
+    font-size: 18px;
+    width: 135px;
+    height: 50px;
+    cursor: pointer;
+    
+}
+
+
+
+
+
+
+
+
+/* Filtres */
+
+.filtres {
+    display: flex;
+    justify-content:left;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 30px;
+    margin-bottom: 35px;
+}
+
+.filtres-liste{
+    
+    display: flex;
+    font-family: "Raleway-Bold", sans-serif;
+    font-weight: bold;
+}
+
+.filtre-unique {
+    border-top: solid 2px  #F2F2F2;
+    border-right: solid 2px  #F2F2F2;
+    border-bottom: solid 2px  #F2F2F2;
+    border-left: solid 0px  #F2F2F2;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+    height: 50px;
+    margin-left: 25px;
+    
+}
+
+
+.filtre-unique:hover{
+    border-top: solid 2px  #F2F2F2;
+    border-right: solid 2px  #F2F2F2;
+    border-bottom: solid 2px  #F2F2F2;
+    border-left: solid 0px  #F2F2F2;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+    height: 50px;
+    margin-left: 25px;
+    cursor: pointer;
+    background-color: #0065FC;
+    color: white;
+
+}
+.filtre-unique p{
+    padding-left: 20px;
+    padding-right: 20px ; 
+    font-family: "Raleway-Bold", sans-serif;
+    font-weight: bold;
+}
+/* Icone information */
+.fa-info {
+    color: #0065FC;
+    background-color: transparent;
+    border-radius: 100%; 
+    border: solid 1px #F2F2F2;
+    font-size: 12px;  
+    height: 25px;
+    width: 25px;
+    padding-top: 5px; ;
+    padding-left: 9px ;
+    }
+
+.info {
+    
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px ;
+    }
+.info p{
+    margin-left: 12px;
+}
+
+/* Sections Hébergements */
+
+.hebergements-principaux {
+
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #F2F2F2;
+    border-radius: 50px;
+    overflow: auto;
+    width: 880px;
+    height: 625px;
+    padding: 50px;   
+    
+  
+}
+
+
+.hebergements-principaux-articles {
+    display: flex;
+    flex-wrap: wrap;
+    overflow: auto;
+    width: 880px;
+    background-color: white;
+
+    
+
+}
+
+.hebergements-principaux-articles-ligne1{
+    display: flex;
+    
+    
+}
+.hebergements-principaux-articles-ligne2 {
+    display: flex;
+}
+
+.hebergements-principaux-articles-indi {
+    background-color:white;
+    width: 280px;
+    height: auto;
+    border-radius: 50px;
+    border: solid 1px black;
+    overflow: auto;
+    align-items: center;
+
+
+}
+
+.hebergements-principaux-articles-indi img {
+    width: 280px;
+    height: auto;
+
+
+}
+
+
+.hebergements-populaires {
+     background-color: grey;
+ }
+
+
+.fa-star{
+    background-color: transparent;
+    font-size: 15px;
+    padding: 0px;
+    width: 20px;
+    height: auto;
+}
+    
+
+
+
