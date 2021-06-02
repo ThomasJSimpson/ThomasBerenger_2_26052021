@@ -10,7 +10,10 @@
     body{
         font-family: "Raleway", sans-serif;
         margin: 0px;
-        padding: 50px;
+        padding-top: 50px; 
+        padding-bottom: 50px;
+        padding-left: 3.47%;
+        padding-right: 3.47%;
         }
 
 
@@ -22,17 +25,8 @@ nav {
     margin: 0px;
 }
 
-    
-nav img {
-        
-        width: 100px;
-        height: 100%;
-    }
-    
 nav div {
-        display: flex;
-        
-           
+        display: flex;        
     }
 
 nav div ul {
@@ -42,8 +36,7 @@ nav div ul {
 
 nav div p {
             color: #0065FC;
-            padding-left: 35px;
-            padding-right: 25px;
+            padding-left: 35px;            
             font-family: "Raleway-Bold", sans-serif;
             font-weight: bold;
     }   
@@ -67,7 +60,7 @@ nav div p {
             padding-top: 64px;
             
     }
-    /* Section recherche de location */
+/* Section recherche de location */
     
 .recherche h1{
         font-family: "Raleway-Bold", sans-serif;
@@ -84,8 +77,8 @@ nav div p {
 
 .formulaire {
     display: flex;
-    justify-content: space-between;
-    width: 420px;
+    justify-content:flex-start;
+    width: 29,17%;
     height: 50px;
       }
 
@@ -156,14 +149,6 @@ nav div p {
     cursor: pointer;
     
 }
-
-
-
-
-
-
-
-
 /* Filtres */
 
 .filtres {
@@ -193,7 +178,7 @@ nav div p {
     align-items: center;
     width: fit-content;
     height: 50px;
-    margin-left: 25px;
+    margin-left: 1.87% ;
     
 }
 
@@ -209,7 +194,7 @@ nav div p {
     align-items: center;
     width: fit-content;
     height: 50px;
-    margin-left: 25px;
+    margin-left: 1.87%;
     cursor: pointer;
     background-color: #0065FC;
     color: white;
@@ -246,74 +231,117 @@ nav div p {
 
 /* Sections Hébergements */
 
+.hebergements{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 625px;
+    margin-bottom: 65px;
+}
+
 .hebergements-principaux {
 
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: left;
     background-color: #F2F2F2;
-    border-radius: 50px;
-    overflow: auto;
-    width: 880px;
+    border-radius: 20px;
+    width: 65.67%;
     height: 625px;
-    padding: 50px;   
-    
-  
+    padding-top: 50px;
+    padding-left: 40px;
+    padding-right: 40px;   
+}
+
+
+.hebergements-principaux h2 {
+    margin-top: 0px;
+    font-family: "Raleway-Bold", sans-serif;
+    font-weight: bold;
+
+}
+
+.hebergements-principaux > p {
+margin-top: 0px;
+font-family: "Raleway-Bold", sans-serif;
+    font-weight: bold;
 }
 
 
 .hebergements-principaux-articles {
     display: flex;
+    justify-content: space-between;
+    align-content: space-between;
     flex-wrap: wrap;
-    overflow: auto;
-    width: 880px;
-    background-color: white;
-
+    width: 800px;
+    height: 430px;
+    background-color: #F2F2F2;
+    margin-bottom: 40px;
+    
     
 
 }
 
-.hebergements-principaux-articles-ligne1{
-    display: flex;
-    
-    
-}
-.hebergements-principaux-articles-ligne2 {
-    display: flex;
-}
+
 
 .hebergements-principaux-articles-indi {
-    background-color:white;
-    width: 280px;
-    height: auto;
-    border-radius: 50px;
-    border: solid 1px black;
-    overflow: auto;
-    align-items: center;
 
+    display: flex;
+    flex-direction: column;
+    background-color:white;
+    height: 200px;
+    border-radius: 20px;
+    width: fit-content;
 
 }
 
 .hebergements-principaux-articles-indi img {
-    width: 280px;
-    height: auto;
-
+    width: 235px;
+    height: 115px;
+    border-radius: 20px 20px 0 0;
+    padding: 5px 5px 0 5px;
+    margin-bottom: 12px;
 
 }
 
+.hebergements-principaux-articles-indi h3 {
+    margin: 0 0 12px 0;
+    font-size: 16px;
+}
+
+.hebergements-principaux-articles-indi p {
+    margin: 0;
+    font-size: 14px;
+}
+
+.hebergements-principaux-articles-indi-description {   
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding-left: 16px;
+    margin: 0;
+}
+.hebergements-principaux-articles-indi-etoiles {
+
+}
 
 .hebergements-populaires {
-     background-color: grey;
+    
+    background-color: #F2F2F2;
+    border-radius: 20px;
+    padding: 50px;   
+    width: 31.34%;
+    height: 625px;
+     
  }
-
 
 .fa-star{
     background-color: transparent;
-    font-size: 15px;
-    padding: 0px;
-    width: 20px;
-    height: auto;
+    font-size: 12px;
+    color: #0065FC;
 }
-    
 
-
-
+/* Activités */
+.activites {
+    width: 100%;
+}
