@@ -8,6 +8,7 @@
         box-sizing: border-box;
     }
     body{
+        
         font-family: "Raleway", sans-serif;
         margin: 0px;
         padding-top: 50px; 
@@ -291,16 +292,19 @@ font-family: "Raleway-Bold", sans-serif;
     background-color:white;
     height: 200px;
     border-radius: 20px;
-    width: fit-content;
+    
+    
 
 }
 
 .hebergements-principaux-articles-indi img {
+    
     width: 235px;
     height: 115px;
     border-radius: 20px 20px 0 0;
     padding: 5px 5px 0 5px;
     margin-bottom: 12px;
+    object-fit: cover;
 
 }
 
@@ -342,6 +346,83 @@ font-family: "Raleway-Bold", sans-serif;
 }
 
 /* Activités */
+
 .activites {
     width: 100%;
+    border: solid 1px;
+}
+.activites-articles{
+    display: flex;
+    justify-content: space-between;
+    align-content: space-between;
+    border: solid 1px;
+}
+
+.activites-articles-long{
+ width: 300px;
+ height: 445px;
+ background-color: cadetblue;
+ border: solid 1px;
+ 
+
+}
+
+
+.activites-articles-long > img{
+    width: 300px;
+    height: 390px;
+    object-fit: cover;
+    
+
+}
+
+.activites-articles-semilong-court{s
+    width: 300px;
+    height: 240px;
+    background-color: cadetblue;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: solid 1px;
+    
+}
+.activites-articles-semilong{
+    width: 300px;
+    height: 240px;
+    border: solid 1px;
+    
+
+}
+.activites-articles-semilong img{
+    width: 300px;
+    height: 180px;
+    object-fit: cover;
+    border: solid 1px;
+    
+}
+
+.activites-articles-court {
+    width: 300px;
+    height: 165px;
+    background-color: cadetblue;
+    border: solid 1px;
+    
+}
+.activites-articles-court img {
+    width: 300px;
+    height: 110px;
+    background-color: cadetblue;
+    object-fit: cover;
+    border: solid 1px;
+    
+}
+.activites-articles-court-semilong {
+    width: 300px;
+    height: 240px;
+    background-color: cadetblue;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: solid 1px;
+
 }
