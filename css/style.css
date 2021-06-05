@@ -27,7 +27,7 @@ nav {
 }
 
 nav div {
-        display: flex;        
+        display: flex;      
     }
 
 nav div ul {
@@ -37,7 +37,8 @@ nav div ul {
 
 nav div p {
             color: #0065FC;
-            padding-left: 35px;            
+            padding-left: 35px;           
+            
             font-family: "Raleway-Bold", sans-serif;
             font-weight: bold;
     }   
@@ -235,8 +236,6 @@ nav div p {
 /* Sections Hébergements */
 .liens2:link{
     text-decoration:none; 
-    font-style: red;
-
 }
 
 .prix-gras{
@@ -261,7 +260,7 @@ nav div p {
     border-radius: 20px;
     width: 65.67%;
     height: 625px;
-    padding-top: 50px;
+    padding-top: 45px;
     padding-left: 40px;
     padding-right: 40px;   
 }
@@ -286,7 +285,7 @@ nav div p {
     justify-content: space-between;
     align-content: space-between;
     flex-wrap: wrap;
-    width: 800px;
+    width: 100%;
     height: 430px;
     background-color: #F2F2F2;
     margin-bottom: 40px;
@@ -298,6 +297,7 @@ nav div p {
     display: flex;
     flex-direction: column;
     background-color:white;
+    width: 100%;
     height: 200px;
     border-radius: 20px;
     box-shadow: 0 0 15px #000000;
@@ -315,7 +315,7 @@ nav div p {
 
 .hebergements-principaux-articles-indi img {
     
-    width: 235px;
+    width: 245px;
     height: 115px;
     border-radius: 20px 20px 0 0;
     padding: 5px 5px 0 5px;
@@ -357,8 +357,7 @@ nav div p {
     flex-direction: column;
     justify-content: space-between;
     border-radius: 20px;  
-    width: 420px;
-    /*31.34%; */
+    width: 31.34%;
     height: 625px;
     padding-top: 45px;
     padding-left: 40px;
@@ -366,11 +365,21 @@ nav div p {
     padding-bottom: 35px;
      
  }
- 
 
+ .fa-chart-line{
+     font-size: 22px;
+     align-self: center;
+ }
+ 
+.titre-populaire{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 25px;
+    
+}
 .hebergements-populaires h2 {
     margin-top: 0px;
-    margin-bottom: 25px;
+    margin-bottom: 0;
     font-family: "Raleway-Bold", sans-serif;
     font-weight: bold;
 
@@ -390,6 +399,7 @@ nav div p {
 .hebergements-populaires-articles {
     display: flex;
     flex-direction: column;
+    width: 100%;
     height: 500px;
     justify-content: space-between;
     background-color: #F2F2F2;
@@ -419,7 +429,7 @@ nav div p {
 }
 .hebergements-populaires-articles-indi img {
     
-    width: 125px;
+    width: 130px;
     height: 145px;
     border-radius: 20px 0 0 20px;
     padding: 5px 0px 5px 5px;
@@ -477,13 +487,13 @@ p.hebergements-populaires-articles-indi-etoiles {
     font-weight: bold;
 }
 
-
-
 .activites-articles{
     display: flex;
+    flex-wrap: wrap;
+    width: 100%;
     justify-content: space-between;
-    
 }
+
 .activites-articles h3{
     margin: 0;
     padding-left: 20px;
@@ -511,7 +521,7 @@ p.hebergements-populaires-articles-indi-etoiles {
 
 
 .activites-articles-long > img{
-    width: 300px;
+    width: 100%;
     height: 390px;
     object-fit: cover;
     border-radius: 20px 20px 0 0 ;
@@ -543,7 +553,7 @@ p.hebergements-populaires-articles-indi-etoiles {
 }
 
 .activites-articles-semilong img{
-    width: 300px;
+    width: 100%;
     height: 180px;
     object-fit: cover;
     border-radius: 20px 20px 0 0 ;
@@ -566,8 +576,9 @@ p.hebergements-populaires-articles-indi-etoiles {
 }
 
 .activites-articles-court img {
-    width: 300px;
+    width: 100%;
     height: 110px;
+    align-self: center;
     object-fit: cover;
     border-radius: 20px 20px 0 0 ;
     
@@ -586,8 +597,12 @@ p.hebergements-populaires-articles-indi-etoiles {
 .pied-de-page{
     background: #F2F2F2;
     display: flex;
+    position: absolute;
+    width: 100%;
+    left:0;
+    padding-left: 3.47%;
     padding-bottom: 50px;
-    padding-left: 0;
+    
 }
 .pied-de-page h3{
     font-family: "Raleway-Bold", sans-serif;
@@ -597,6 +612,7 @@ p.hebergements-populaires-articles-indi-etoiles {
 }
 .a-propos{
     margin-right: 225px;
+
 }
 .nos-hebergements{
     margin-right: 290px;
