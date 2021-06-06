@@ -1,20 +1,16 @@
-@font-face {
-    font-family: "Raleway" ;
-    src: url(./Raleway/Raleway-VariableFont_wght.ttf) format('truetype'),
-         url(./Raleway/static/Raleway-Bold.ttf) format('truetype');
-    }
-
     * {
         box-sizing: border-box;
     }
+   
     body{
-        
-        font-family: "Raleway", sans-serif;
-        margin: 0;
-        padding-top: 50px; 
-        
+        font-family: 'Raleway', sans-serif;
+        width: 1440px;
+        max-width: 1440px;
+        margin: auto;
+        padding-top: 50px;   
         padding-left: 3.47%;
         padding-right: 3.47%;
+        
         }
 
 
@@ -65,8 +61,8 @@ nav div p {
 /* Section recherche de location */
     
 .recherche h1{
-        font-family: "Raleway-Bold", sans-serif;
-        font-weight: 500;
+        font-family: "Raleway", sans-serif;
+        font-weight: 700;
         margin-top: 40px;
         margin-bottom: 10px;
 }
@@ -131,16 +127,16 @@ nav div p {
 }
 
 ::placeholder{
-    font-family: "Raleway-Bold", sans-serif;
-    font-weight: bold;
+    font-family: "Raleway", sans-serif;
+    font-weight: 700;
     color: black;
     font-weight:700;
     
 }
 /* bouton recherche */
 .formulaire button{
-    font-family: "Raleway-Bold", sans-serif;
-    font-weight: bold;
+    font-family: "Raleway", sans-serif;
+    font-weight: 700;
     background-color: #0065FC;
     border-radius: 0px 15px 15px 0px;
     border: 0px;
@@ -165,8 +161,8 @@ nav div p {
 .filtres-liste{
     
     display: flex;
-    font-family: "Raleway-Bold", sans-serif;
-    font-weight: bold;
+    font-family: "Raleway", sans-serif;
+    font-weight: 700;
 }
 
 .filtre-unique {
@@ -181,6 +177,7 @@ nav div p {
     width: fit-content;
     height: 50px;
     margin-left: 1.87% ;
+    transition: 0.3s;
     
 }
 
@@ -201,14 +198,13 @@ nav div p {
     background-color: #0065FC;
     color: white;
     transform: scale(1.1);
-    
-
+    transition: 0.3s;
 }
 .filtre-unique p{
     padding-left: 20px;
     padding-right: 20px ; 
-    font-family: "Raleway-Bold", sans-serif;
-    font-weight: bold;
+    font-family: "Raleway", sans-serif;
+    font-weight: 700;
 }
 /* Icone information */
 .fa-info {
@@ -239,8 +235,8 @@ nav div p {
 }
 
 .prix-gras{
-    font-family: "Raleway-Bold", sans-serif;
-    font-weight: bold;
+    font-family: "Raleway", sans-serif;
+    font-weight: 700;
 
 }
 .hebergements{
@@ -268,15 +264,15 @@ nav div p {
 
 .hebergements-principaux h2 {
     margin-top: 0px;
-    font-family: "Raleway-Bold", sans-serif;
-    font-weight: bold;
+    font-family: "Raleway", sans-serif;
+    font-weight: 700;
 
 }
 
 .hebergements-principaux > p {
     margin-top: 0px;
-    font-family: "Raleway-Bold", sans-serif;
-    font-weight: bold;
+    font-family: "Raleway", sans-serif;
+    font-weight: 700;
 }
 
 
@@ -300,7 +296,8 @@ nav div p {
     width: 100%;
     height: 200px;
     border-radius: 20px;
-    box-shadow: 0 0 15px #000000;
+    box-shadow: 0 0 15px rgba(0,0,0,0.2);
+    transition: 0.3s;
 }
 
 .hebergements-principaux-articles-indi:hover {
@@ -309,8 +306,9 @@ nav div p {
     background-color:white;
     height: 200px;
     border-radius: 20px;
-    box-shadow: 0 0 15px #000000;
+    box-shadow: 0 0 15px rgba(0,0,0,0.2);
     transform: scale(1.05);
+    transition: 0.3s;
 }
 
 .hebergements-principaux-articles-indi img {
@@ -327,8 +325,8 @@ nav div p {
 .hebergements-principaux-articles-indi h3 {
     margin: 0;
     font-size: 16px;
-    font-family: "Raleway-Bold", sans-serif;
-    font-weight: bold;
+    font-family: "Raleway", sans-serif;
+    font-weight: 700;
 }
 
 .hebergements-principaux-articles-indi p {
@@ -380,19 +378,19 @@ nav div p {
 .hebergements-populaires h2 {
     margin-top: 0px;
     margin-bottom: 0;
-    font-family: "Raleway-Bold", sans-serif;
-    font-weight: bold;
+    font-family: "Raleway", sans-serif;
+    font-weight: 700;
 
 }
 .hebergements-populaires-articles h3{
-    font-family: "Raleway-Bold", sans-serif;
-    font-weight: bold;
+    font-family: "Raleway", sans-serif;
+    font-weight: 700;
 }
 
 .hebergements-populaires > p {
     margin-top: 0px;
-    font-family: "Raleway-Bold", sans-serif;
-    font-weight: bold;
+    font-family: "Raleway", sans-serif;
+    font-weight: 700;
 }
 
 
@@ -409,12 +407,13 @@ nav div p {
 .hebergements-populaires-articles-indi {
 
     display: flex;
+    justify-content: flex-start;
     align-items: center;
     background-color:white;
     height: 145px;
     border-radius: 20px;
-    padding-right: 50px;
-    box-shadow: 0 0 15px #000000;
+    box-shadow: 0 0 15px rgba(0,0,0,0.2);
+    transition: 0.3s;
 }
 .hebergements-populaires-articles-indi:hover {
 
@@ -423,9 +422,9 @@ nav div p {
     background-color:white;
     height: 145px;
     border-radius: 20px;
-    padding-right: 50px;
-    box-shadow: 0 0 15px #000000;
+    box-shadow: 0 0 15px rgba(0,0,0,0.2);
     transform: scale(1.05);
+    transition: 0.3s;
 }
 .hebergements-populaires-articles-indi img {
     
@@ -434,6 +433,7 @@ nav div p {
     border-radius: 20px 0 0 20px;
     padding: 5px 0px 5px 5px;
     object-fit: cover;
+    margin-right: 16px;
 
 }
 
@@ -441,40 +441,57 @@ nav div p {
 .hebergements-populaires-articles-indi h3 {
     margin: 0;
     font-size: 16px;
-    margin-bottom: 12px;
 }
 
 .hebergements-populaires-articles-indi p {
     margin: 0;
     font-size: 14px;
-    margin-bottom: 35px;
     
 }
 
 .hebergements-populaires-articles-indi-description {   
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
     height: 110px;
-    padding-left: 16px;
-    margin: 0;
+    margin-right: 50px;
+    
+    overflow: hidden;
+    
     
 }
+.hebergements-populaires-articles-indi-description-HP{
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+width: 100%;
+height: 60px;
+
+}
+/* 140x110 */
+/* 60px */
 
 p.hebergements-populaires-articles-indi-etoiles {
     margin:0;
+    display: flex;
+    flex-wrap: nowrap;
+
+    
 }
-
-
 .fa-star{
     background-color: transparent;
     font-size: 12px;
-    color: #0065FC;
+    color: #d7d5d5;
 }
-.etoile-grise { 
+
+.checked { 
     background-color: transparent;
     font-size: 12px;
-    color: #080b10;
+    color: #0065FC;
+    
 }
+
 
 /* Activités */
 
@@ -483,8 +500,8 @@ p.hebergements-populaires-articles-indi-etoiles {
     margin-bottom: 60px;
 }
 .activites h2{
-    font-family: "Raleway-Bold", sans-serif;
-    font-weight: bold;
+    font-family: "Raleway", sans-serif;
+    font-weight: 700;
 }
 
 .activites-articles{
@@ -498,8 +515,8 @@ p.hebergements-populaires-articles-indi-etoiles {
     margin: 0;
     padding-left: 20px;
     padding-top: 20px;
-    font-family: "Raleway-Bold", sans-serif;
-    font-weight: bold;
+    font-family: "Raleway", sans-serif;
+    font-weight: 700;
     font-size: 15px;
 }
 
@@ -508,15 +525,18 @@ p.hebergements-populaires-articles-indi-etoiles {
     width: 300px;
     height: 445px;
     border-radius: 20px;
-    box-shadow: 0 0 15px #000000;
+    box-shadow: 0 0 15px rgba(0,0,0,0.2);
+    transition: 0.3s;
  
 }
 .activites-articles-long:hover{
     width: 300px;
     height: 445px;
     border-radius: 20px;
-    box-shadow: 0 0 15px #000000;
+    box-shadow: 0 0 15px rgba(0,0,0,0.2);
     transform: scale(1.05);
+    transition: 0.3s;
+    
 }
 
 
@@ -540,16 +560,18 @@ p.hebergements-populaires-articles-indi-etoiles {
 .activites-articles-semilong{
     width: 300px;
     height: 240px;
-    box-shadow: 0 0 15px #000000;
+    box-shadow: 0 0 15px rgba(0,0,0,0.2);
     border-radius: 20px;
+    transition: 0.3s;
     
 }
 .activites-articles-semilong:hover{
     width: 300px;
     height: 240px;
-    box-shadow: 0 0 15px #000000;
+    box-shadow: 0 0 15px rgba(0,0,0,0.2);
     border-radius: 20px;
     transform: scale(1.05);
+    transition: 0.3s;
 }
 
 .activites-articles-semilong img{
@@ -563,16 +585,18 @@ p.hebergements-populaires-articles-indi-etoiles {
 .activites-articles-court {
     width: 300px;
     height: 165px; 
-    box-shadow: 0 0 15px #000000;
+    box-shadow: 0 0 15px rgba(0,0,0,0.2);
     border-radius: 20px;
+    transition: 0.3s;
 }
 
 .activites-articles-court:hover {
     width: 300px;
     height: 165px; 
-    box-shadow: 0 0 15px #000000;
+    box-shadow: 0 0 15px rgba(0,0,0,0.2);
     border-radius: 20px;
     transform: scale(1.05);
+    transition: 0.3s;
 }
 
 .activites-articles-court img {
@@ -599,9 +623,11 @@ p.hebergements-populaires-articles-indi-etoiles {
     display: flex;
     position: absolute;
     width: 100%;
+    /* grandes resol width: 100%; */
     left:0;
     padding-left: 3.47%;
     padding-bottom: 50px;
+    
     
 }
 .pied-de-page h3{
