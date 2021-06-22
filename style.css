@@ -2,7 +2,10 @@
   box-sizing: border-box;
 }
 
-
+/* *{
+  margin:0;
+  padding: 0;
+} */
 
 body {
   margin: auto;
@@ -18,7 +21,7 @@ body {
   padding-top: 50px;
   padding-left: 50px;
   padding-right: 50px;
-  margin-bottom: 50px;
+  padding-bottom: 50px;
 }
 
 /*  Header  */
@@ -925,18 +928,27 @@ p.hebergements-populaires-articles-indi-etoiles {
 }
 
 @media screen and (max-width: 719px) {
+  body {
+    min-width: 375px;
+  }
   .main {
-    padding: 30px 5.335% 0;
+    padding: 30px 0 50px;
   }
 
   nav {
     flex-wrap: wrap;
+    margin-bottom: 36px;
   }
-
+.nav-logo{
+  padding-left: 5.33%;
+}
+.nav-p{
+  padding-right: 5.33%;
+}
   .nav-liens {
     order: 3;
     flex-grow: 1;
-    margin: 32px -6% 0 -6%;
+    margin: 32px 0 0 0;
     flex-basis: 100%;
   }
 
@@ -972,7 +984,8 @@ p.hebergements-populaires-articles-indi-etoiles {
   }
 
   .recherche {
-    margin-top: 36px;
+    
+    padding: 0 5.33% 0;
   }
 
   .recherche h1 {
@@ -987,13 +1000,14 @@ p.hebergements-populaires-articles-indi-etoiles {
   }
 
   .formulaire {
-    max-width: 335px;
+    width: unset;
     border-top: solid 1px #f2f2f2;
     border-right: solid 0px #f2f2f2;
     border-bottom: solid 1px #f2f2f2;
     border-left: solid 0px #f2f2f2;
     border-radius: 25px;
     align-items: center;
+    max-width: 335px;
   }
 
   .fas.fa-search::before {
@@ -1005,8 +1019,7 @@ p.hebergements-populaires-articles-indi-etoiles {
     line-height: 48px;
     border-top: 0px solid #f2f2f2;
     border-bottom: 0px solid #f2f2f2;
-    max-width: 235px;
-    width: 235px;
+    
   }
 
   .bouton {
@@ -1039,7 +1052,7 @@ p.hebergements-populaires-articles-indi-etoiles {
 
   .info {
     height: 50px;
-    margin-bottom: 40px;
+    margin-bottom: 25px;
     margin-top: 9px;
   }
 
@@ -1061,8 +1074,8 @@ p.hebergements-populaires-articles-indi-etoiles {
     border-radius: 0px;
     height: auto;
     padding-top: 45px;
-    padding-left: unset;
-    padding-right: unset;
+    padding-left: 5.33%;
+    padding-right: 5.33%;
   }
 
   .hebergements-principaux-articles {
@@ -1087,14 +1100,12 @@ p.hebergements-populaires-articles-indi-etoiles {
   }
 
   .hebergements-populaires {
-    align-self: center;
     justify-content: space-between;
     border-radius: 0;
-    width: 112%;
     height: 580px;
     padding-top: 43px;
-    padding-left: 5.97%;
-    padding-right: 5.97%;
+    padding-left: 5.33%;
+    padding-right: 5.33%;
     padding-bottom: 37px;
   }
 
@@ -1127,6 +1138,10 @@ p.hebergements-populaires-articles-indi-etoiles {
     padding: 5.25% 10.16% 4.37% 6.12%;
   }
 
+  .activites{
+    padding: 0 5.33% 0;
+
+  }
   .activites-articles {
     display: flex;
     flex-direction: column;
@@ -1193,6 +1208,7 @@ p.hebergements-populaires-articles-indi-etoiles {
     height: 190px;
   }
 
+  
   .pied-de-page2 {
     flex-direction: column;
     flex-basis: 100%;
