@@ -2,6 +2,8 @@
   box-sizing: border-box;
 }
 
+
+
 body {
   margin: auto;
   display: flex;
@@ -24,7 +26,7 @@ body {
 nav {
   display: flex;
   justify-content: flex-end;
-  margin: 0px;
+  margin: 0 0 40px 0;
 }
 
 .nav-logo {
@@ -54,7 +56,7 @@ nav {
 .liens:link {
   color: black;
   text-decoration: none;
-  padding-top: 65px;
+  padding-top: 64px;
   padding-left: 35px;
   padding-right: 35px;
 }
@@ -68,9 +70,6 @@ nav {
 }
 
 /* Section recherche de location  */
-.recherche {
-  margin-top: 40px;
-}
 
 .recherche h1 {
   font-family: "Raleway", sans-serif;
@@ -87,7 +86,6 @@ nav {
 
 .formulaire {
   display: flex;
-  justify-content: flex-start;
   width: 420px;
   height: 50px;
   margin-bottom: 30px;
@@ -1090,7 +1088,6 @@ p.hebergements-populaires-articles-indi-etoiles {
 
   .hebergements-populaires {
     align-self: center;
-    flex-direction: column;
     justify-content: space-between;
     border-radius: 0;
     width: 112%;
@@ -1197,9 +1194,8 @@ p.hebergements-populaires-articles-indi-etoiles {
   }
 
   .pied-de-page2 {
-    display: flex;
     flex-direction: column;
-    width: 100%;
+    flex-basis: 100%;
     padding-bottom: 50px;
     margin-left: 5.4%;
   }
