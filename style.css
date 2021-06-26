@@ -2,11 +2,6 @@
   box-sizing: border-box;
 }
 
-/* *{
-  margin:0;
-  padding: 0;
-} */
-
 body {
   margin: auto;
   display: flex;
@@ -237,8 +232,12 @@ nav {
 }
 
 /* Sections Hébergements */
+.liens2{
+  color: black;
+}
 .liens2:link {
   text-decoration: none;
+  
 }
 
 .prix-gras {
